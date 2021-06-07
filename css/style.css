@@ -17,7 +17,7 @@ body {
     height: 100vh;
     position: relative;
     background: url(/img/bgfv.jpg) center / cover no-repeat;
-    background-color: rgba(255, 255, 255, );
+    background-color: rgba(255, 255, 255, 1);
     background-blend-mode: lighten;
     transition: background-color 1s;
 }
@@ -31,36 +31,44 @@ body {
 }
 
 #ame {
+    width: 100%;
     position: absolute;
-    top: 50%;
+    top: 33%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     -webkit-transform: translateY(-50%) translateX(-50%);
-    width: 100%;
+}
+#soto{
     opacity: 0.5;
 }
 
 #step00 {
+    opacity: 0;
     background-color: rgba(255, 255, 255, 1);
 }
 
 #step01 {
+    opacity: 0;
     background-color: rgba(255, 255, 255, 1);
 }
 
 #step02 {
+    opacity: 0;
     background-color: rgba(255, 255, 255, 1);
 }
 
 #step03 {
+    opacity: 0;
     background-color: rgba(255, 255, 255, 1);
 }
 
 #step99 {
+    opacity: 0;
     background-color: rgba(255, 255, 255, 1);
 }
 
 #step {
+    opacity: 0;
     background-color: rgba(255, 255, 255, 1);
 }
 

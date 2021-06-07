@@ -19,7 +19,9 @@
     </script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#pagepiling').pagepiling();
+            $('#pagepiling').pagepiling({
+                loopBottom: true,
+            });
         });
     </script>
     <style type="text/css">
@@ -58,7 +60,7 @@
 
 <body>
     <div id="pagepiling">
-        <div class="section">
+        <div class="section" id="header">
           <div id="fv">
             <div id="logo">
                 <svg viewBox="0 0 1440 1024">
@@ -300,6 +302,7 @@
           </div>
         </div>
         <div class="section" id="step00">
+            <p>あああ</p>
         </div>
         <div class="section" id="step01">
         </div>

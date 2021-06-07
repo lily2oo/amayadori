@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+/* 共通部分 */
 * {
     margin: 0;
     padding: 0;
@@ -8,17 +8,17 @@
 body {
     background: #FFF no-repeat left top;
     font-family: "Josefin Sans", "YuMincho", serif;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
 }
 
-header {
-    position: relative;
-    width: 100%;
+#fv {
+    width: 100vw;
     height: 100vh;
+    position: relative;
     background: url(/img/bgfv.jpg) center / cover no-repeat;
-    background-color:rgba(255,255,255,1);
-    background-blend-mode:lighten;
+    background-color: rgba(255, 255, 255, );
+    background-blend-mode: lighten;
     transition: background-color 1s;
 }
 
@@ -28,9 +28,9 @@ header {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     -webkit-transform: translateY(-50%) translateX(-50%);
-    width: 100%;
 }
-#ame{
+
+#ame {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -39,41 +39,88 @@ header {
     width: 100%;
     opacity: 0.5;
 }
+
 #step00 {
-    width: 100%;
-    height: 100vh;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 #step01 {
-    width: 100%;
-    height: 100vh;
-    background: url(/img/bg1.jpg) center / cover no-repeat;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 #step02 {
-    width: 100%;
-    height: 100vh;
-    background: url(/img/bg2.jpg) center / cover no-repeat;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 #step03 {
-    width: 100%;
-    height: 100vh;
-    background: url(/img/bg3.jpg) center / cover no-repeat;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 #step99 {
-    width: 100%;
-    height: 100vh;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 #step {
-    width: 100%;
-    height: 100vh;
-    background: url(/img/bg4.jpg) center / cover no-repeat;
+    background-color: rgba(255, 255, 255, 1);
 }
 
+/* ぴーしー */
+@media screen and (min-width:481px) {
+    #logo{
+        width: 100%;
+    }
+    #step00 {
+    }
 
+    #step01 {
+        background: url(/img/bg1.jpg) center / cover no-repeat;
+    }
+
+    #step02 {
+        background: url(/img/bg2.jpg) center / cover no-repeat;
+    }
+
+    #step03 {
+        background: url(/img/bg3.jpg) center / cover no-repeat;
+    }
+
+    #step99 {
+    }
+
+    #step {
+        background: url(/img/bg4.jpg) center / cover no-repeat;
+    }
+
+}
+
+/* すまほ */
+@media screen and (max-width:480px) {
+    #logo{
+        width: 150%;
+    }
+    #step00 {
+    }
+    #step01 {
+        background: url(/img/bg1s.jpg) center / cover no-repeat;
+    }
+
+    #step02 {
+        background: url(/img/bg2s.jpg) center / cover no-repeat;
+    }
+
+    #step03 {
+        background: url(/img/bg3s.jpg) center / cover no-repeat;
+    }
+
+    #step99 {
+    }
+
+    #step {
+        background: url(/img/bg4s.jpg) center / cover no-repeat;
+    }
+}
+
+/*svg云々*/
 .svg-elem-1 {
     -webkit-animation: animate-svg-fill-1 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s both;
     animation: animate-svg-fill-1 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s both;
@@ -898,10 +945,12 @@ header {
     -webkit-animation: animate-svg-fill-45 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6199999999999999s both;
     animation: animate-svg-fill-45 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6199999999999999s both;
 }
+
 .svg-elem-46 {
     -webkit-animation: animate-svg-fill-46 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.65s both;
     animation: animate-svg-fill-46 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.65s both;
 }
+
 @-webkit-keyframes animate-svg-fill-46 {
     0% {
         fill: transparent;
@@ -921,8 +970,9 @@ header {
         fill: rgb(255, 255, 255);
     }
 }
+
 .svg-elem-47 {
-    -webkit-animation: animate-svg-fill-47 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)  1.88s both;
+    -webkit-animation: animate-svg-fill-47 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.88s both;
     animation: animate-svg-fill-47 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.68s both;
 }
 
@@ -952,15 +1002,16 @@ header {
 }
 
 .svg-elem-49 {
-    -webkit-animation: animate-svg-fill-49 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)  1.80s both;
+    -webkit-animation: animate-svg-fill-49 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.80s both;
     animation: animate-svg-fill-49 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.80s both;
 }
 
 
 .svg-elem-50 {
-    -webkit-animation: animate-svg-fill-50 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)  1.80s both;
+    -webkit-animation: animate-svg-fill-50 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.80s both;
     animation: animate-svg-fill-50 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.80s both;
 }
+
 @-webkit-keyframes animate-svg-fill-50 {
     0% {
         fill: transparent;
@@ -982,15 +1033,16 @@ header {
 }
 
 .svg-elem-51 {
-    -webkit-animation: animate-svg-fill-51 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)  1.74s both;
+    -webkit-animation: animate-svg-fill-51 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.74s both;
     animation: animate-svg-fill-51 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.74s both;
 }
 
 
 .svg-elem-52 {
-    -webkit-animation: animate-svg-fill-48 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)  1.74s both;
+    -webkit-animation: animate-svg-fill-48 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.74s both;
     animation: animate-svg-fill-48 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.74s both;
 }
+
 @-webkit-keyframes animate-svg-fill-52 {
     0% {
         fill: transparent;
@@ -1012,13 +1064,15 @@ header {
 }
 
 .svg-elem-53 {
-    -webkit-animation: animate-svg-fill-53 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)  2s both;
+    -webkit-animation: animate-svg-fill-53 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2s both;
     animation: animate-svg-fill-48 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2s both;
 }
+
 .svg-elem-54 {
-    -webkit-animation: animate-svg-fill-54 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)  2s both;
+    -webkit-animation: animate-svg-fill-54 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2s both;
     animation: animate-svg-fill-54 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2s both;
 }
+
 @-webkit-keyframes animate-svg-fill-54 {
     0% {
         fill: transparent;
@@ -1040,13 +1094,15 @@ header {
 }
 
 .svg-elem-55 {
-    -webkit-animation: animate-svg-fill-55 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)  1.80s both;
+    -webkit-animation: animate-svg-fill-55 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.80s both;
     animation: animate-svg-fill-55 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.74s both;
 }
+
 .svg-elem-56 {
-    -webkit-animation: animate-svg-fill-56 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)  1.80s both;
+    -webkit-animation: animate-svg-fill-56 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.80s both;
     animation: animate-svg-fill-56 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.83s both;
 }
+
 @-webkit-keyframes animate-svg-fill-56 {
     0% {
         fill: transparent;
@@ -1071,10 +1127,12 @@ header {
     -webkit-animation: animate-svg-fill-57 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.98s both;
     animation: animate-svg-fill-57 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.98s both;
 }
+
 .svg-elem-58 {
     -webkit-animation: animate-svg-fill-58 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.98s both;
     animation: animate-svg-fill-58 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 1.98s both;
 }
+
 @-webkit-keyframes animate-svg-fill-58 {
     0% {
         fill: transparent;
@@ -1526,56 +1584,57 @@ header {
 }
 
 
-#hamon,#sizuku {
-    transform-origin:50% 88.28%;
-    }
-    #hamon {
+#hamon,
+#sizuku {
+    transform-origin: 50% 88.28%;
+}
 
-        animation:hamon 1.4s linear
-        }
-        
-        
-        @keyframes hamon {
-        
-        from {
-        
-        transform:scale(0);
-        }
-        
-        
-        50% {
-        
-        transform:scale(0);
-        }
-        
-        }
-        
-        
-        #sizuku {
-        
-        animation:sizuku 1.4s linear
-        }
-        
-        
-        @keyframes sizuku {
-        
-        from {
-        
-        transform:translate(-80%,-100%) scale(1);
-        }
-        
-        
-        50% {
-        
-        transform:translate(0%,0%) scale(1);
-        }
-        
-        
-        
-        100% {
-        
-        transform:translate(0%,0%) scale(0);
-        }
-        
-        }
-        
+#hamon {
+
+    animation: hamon 1.4s linear
+}
+
+
+@keyframes hamon {
+
+    from {
+
+        transform: scale(0);
+    }
+
+
+    50% {
+
+        transform: scale(0);
+    }
+
+}
+
+
+#sizuku {
+
+    animation: sizuku 1.4s linear
+}
+
+
+@keyframes sizuku {
+
+    from {
+
+        transform: translate(-80%, -100%) scale(1);
+    }
+
+
+    50% {
+
+        transform: translate(0%, 0%) scale(1);
+    }
+
+
+
+    100% {
+
+        transform: translate(0%, 0%) scale(0);
+    }
+
+}

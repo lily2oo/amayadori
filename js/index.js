@@ -1,5 +1,5 @@
 $(function(){
-        $("header").css({
+        $("#fv").css({
             "background-color":"transparent",
         });
 });

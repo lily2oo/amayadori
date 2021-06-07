@@ -110,22 +110,22 @@ body {
     #step00 {
     }
     #step01 {
-        background: url(/img/bg1s.jpg) center / cover no-repeat;
+        background: url(/img/bg1s.jpg) center / auto 100% no-repeat;
     }
 
     #step02 {
-        background: url(/img/bg2s.jpg) center / cover no-repeat;
+        background: url(/img/bg2s.jpg) center / auto 100% no-repeat;
     }
 
     #step03 {
-        background: url(/img/bg3s.jpg) center / cover no-repeat;
+        background: url(/img/bg3s.jpg) center / auto 100% no-repeat;
     }
 
     #step99 {
     }
 
     #step {
-        background: url(/img/bg4s.jpg) center / cover no-repeat;
+        background: url(/img/bg4s.jpg) center / auto 100% no-repeat;
     }
 }
 

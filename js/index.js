@@ -5,7 +5,9 @@ $(function () {
 });
 
 $(function () {
-    $("#pagepiling div:nth-child(n+2):nth-child(-n+7)").on("mouseover", function () {
+    var breakPoint = 768;
+    var event = $(window).innerWidth() > breakPoint ? 'mouseover' : 'touchstart';
+    $("#pagepiling div:nth-child(n+1):nth-child(-n+7)").on(event, function () {
         $(".active").animate({
                 opacity: 1
             },

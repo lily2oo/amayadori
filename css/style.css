@@ -6,10 +6,13 @@
 }
 
 body {
-    background: #FFF no-repeat left top;
     font-family: "Josefin Sans", "YuMincho", serif;
     width: 100vw;
     height: 100vh;
+}
+
+.section{
+    position: relative;
 }
 #fv {
     width: 100vw;
@@ -24,7 +27,7 @@ body {
 
 #logo {
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     -webkit-transform: translateY(-50%) translateX(-50%);
@@ -41,17 +44,29 @@ body {
 #soto{
     opacity: 0.5;
 }
-
+#arrow{
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+    opacity: 0.8;
+}
+#arrow p{
+    font: italic 300 1vw "Josefin Sans";
+    color: #FFF;
+    letter-spacing: 0.4em;
+    margin: 5px;
+}
 #step00 {
     opacity: 0;
     background-color: rgba(255, 255, 255, 1);
 }
-
 #step01 {
     opacity: 0;
     background-color: rgba(255, 255, 255, 1);
 }
-
 #step02 {
     opacity: 0;
     background-color: rgba(255, 255, 255, 1);
@@ -71,38 +86,115 @@ body {
     opacity: 0;
     background-color: rgba(255, 255, 255, 1);
 }
-
 /* ぴーしー */
 @media screen and (min-width:481px) {
     #logo{
-        width: 100%;
+        width: 95%;
+    }
+    .format{
+        opacity: 0.9;
+    }
+    .format-tl{
+        position: absolute;
+        top: 6%;
+        left: 9%;
+        font: italic 100 3vw "Josefin Sans";
+        color: #3f3f3f;
+    }
+    .format-bl{
+        position: absolute;
+        top: 14%;
+        left: 6%;
+        font: normal 300 1.4vw "YuMincho";
+        color: #c4c4c4;
+        writing-mode: vertical-rl;
+    }
+    .format-tr{
+        position: absolute;
+        top: 86%;
+        left: 74%;       
+        font: italic 100 1.125vw "Josefin Sans";
+        letter-spacing: 0.4em;
+        color: #4f4f4f;
+    }
+    .format-br{
+        position: absolute;
+        top: 88.6%;
+        left: 69%;      
+        font: italic 100 0.843vw "Josefin Sans";
+        letter-spacing: 0.4em;
+        color: #c4c4c4;
     }
     #step00 {
     }
-
+    #main00{
+        text-align: center;
+        font: normal 600 2vw "YuMincho";
+        letter-spacing: 5%;
+        color: #3f3f3f;
+    }
     #step01 {
         background: url(/img/bg1.jpg) center / cover no-repeat;
     }
-
+    #main01{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        font: normal 300 1.8vw "YuMincho";
+        color: #ffffff;
+    }
     #step02 {
         background: url(/img/bg2.jpg) center / cover no-repeat;
     }
-
+    #main02{
+        position: absolute;
+        top: 45%;
+        left: 7%;
+        font: normal 300 1.8vw "YuMincho";
+        color: #ffffff;
+    }
     #step03 {
         background: url(/img/bg3.jpg) center / cover no-repeat;
     }
-
+    #main03{
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        font: normal 300 1.5vw "YuMincho";
+        color: #3f3f3f;
+    }
     #step99 {
     }
 
-    #step {
+    #main99{
+        text-align: center;
+        font: normal 300 1.8vw "YuMincho";
+        color: #3f3f3f;
+    }
+    #step{
         background: url(/img/bg4.jpg) center / cover no-repeat;
     }
-
+    #main{
+        position: absolute;
+        top: 57%;
+        left: 6%;
+        font: normal 300 1.8vw "YuMincho";
+        color: #ffffff;
+    }
+    #step01 .format-tl,
+    #step02 .format-tl,
+    #step .format-tl{
+        color: #f0f0f0;
+    }
+    .tlt span{
+        margin:1px 2px
+    }
 }
-
 /* すまほ */
 @media screen and (max-width:480px) {
+    #arrow p{
+        font-size: 16px;
+    }
     #logo{
         width: 130%;
     }

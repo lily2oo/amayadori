@@ -11,8 +11,16 @@ body {
     height: 100vh;
 }
 
+#wrap{
+    width: 100vw;
+    height: 100vh;
+}
 .section{
     position: relative;
+}
+#header{
+    width: 100vw;
+    height: 100vh;   
 }
 #fv {
     width: 100vw;
@@ -302,7 +310,7 @@ body {
         top: 63%;
         left: 15%;
         font: normal 300 4vw "YuMincho";
-        line-height: 2;
+        line-height: 1.8;
         color: #ffffff;
     }
     #step03 {

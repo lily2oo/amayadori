@@ -1,7 +1,3 @@
-$(window).on('load',function(){
-    $("#loading-wrapper").addClass("completed")
- });
-
 $(function () {
     $("#fv").css({
         "background-color": "transparent",

@@ -278,7 +278,7 @@ body {
         width: 90%;
         text-align: left;
         font: normal 600 4.4vw "YuMincho";
-        line-height: 2;
+        line-height: 1.8;
         color: #3f3f3f;
         opacity: 0.9;
     }
@@ -287,7 +287,7 @@ body {
     }
     #main01{
         position: absolute;
-        top: 68%;
+        top: 64%;
         left: 15%;
         font: normal 300 3.7vw "YuMincho";
         line-height: 2;
@@ -299,7 +299,7 @@ body {
     #main02{
         width: 80vw;
         position: absolute;
-        top: 68%;
+        top: 63%;
         left: 15%;
         font: normal 300 4vw "YuMincho";
         line-height: 2;
@@ -341,7 +341,7 @@ body {
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         font: normal 300 3.3vw "YuMincho";
-        line-height: 2;
+        line-height: 1.8;
         color: #ffffff;
         opacity: 0.8;
     }

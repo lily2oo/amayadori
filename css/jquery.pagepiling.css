@@ -14,6 +14,11 @@ html, body {
     /*Avoid flicker on slides transitions for mobile phones #336 */
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+.completed {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
 #pagepiling{
     width:100vw;  
     height:100vh;

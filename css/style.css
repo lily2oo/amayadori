@@ -100,21 +100,22 @@ body {
         opacity: 0.8;
     }
     #arrow p{
-        font: italic 300 1vw "Josefin Sans";
+        font:1.3vw "Josefin Sans";
         color: #FFF;
-        letter-spacing: 0.6em;
+        letter-spacing: 0.4em;
+        margin: 10px;
     }
     #arrow img {
         width: 2vw;
     }
     .format{
-        opacity: 0.9;
+        opacity: 1;
     }
     .format-tl{
         position: absolute;
-        top: 6%;
+        top: 8%;
         left: 9%;
-        font: italic 1 3vw "Josefin Sans";
+        font: 3vw "Josefin Sans";
         color: #3f3f3f;
     }
     .format-bl{
@@ -130,7 +131,7 @@ body {
         position: absolute;
         top: 86%;
         left: 74%;       
-        font: italic 1 1.125vw "Josefin Sans";
+        font: 1.125vw "Josefin Sans";
         letter-spacing: 0.6em;
         color: #4f4f4f;
     }
@@ -138,7 +139,7 @@ body {
         position: absolute;
         top: 88.6%;
         left: 66%;      
-        font: italic 1 0.843vw "Josefin Sans";
+        font: 0.843vw "Josefin Sans";
         letter-spacing: 0.6em;
         color: #c4c4c4;
     }
@@ -236,9 +237,9 @@ body {
         opacity: 0.8;
     }
     #arrow p{
-        font: italic 300 3vw "Josefin Sans";
+        font: 3vw "Josefin Sans";
         color: #FFF;
-        letter-spacing: 0.6em;
+        letter-spacing: 0.4em;
         margin: 5px;
     }
     #arrow img {
@@ -246,14 +247,14 @@ body {
     }
     .format-tl{
         position: absolute;
-        top: 4%;
-        left: 11%;
-        font: italic 1 5vw "Josefin Sans";
+        top: 4.8%;
+        left: 12%;
+        font: 5vw "Josefin Sans";
         color: #3f3f3f;
     }
     .format-bl{
         position: absolute;
-        top: 9%;
+        top: 8.5%;
         left: 5%;
         font: normal 300 3vw "YuMincho";
         letter-spacing: 0.6em;
@@ -264,7 +265,7 @@ body {
         position: absolute;
         top: 91.5%;
         left: 36%;       
-        font: italic 1 3.2vw "Josefin Sans";
+        font: 3.6vw "Josefin Sans";
         letter-spacing: 0.6em;
         color: #4f4f4f;
     }
@@ -272,7 +273,7 @@ body {
         position: absolute;
         top: 94%;
         left: 21%;      
-        font: italic 1 2.8vw "Josefin Sans";
+        font: 2.7vw "Josefin Sans";
         letter-spacing: 0.6em;
         color: #c4c4c4;
     }

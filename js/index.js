@@ -4,7 +4,6 @@ $(function () {
     });
 });
 
-
 // Create a closure
 (function () {
     // Your base, I'm in it!

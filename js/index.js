@@ -1,3 +1,11 @@
+$(window).on('load',function(){
+    var loading = function(){
+      $('.load').fadeOut('fast');
+      $('#pagepiling').fadeIn('slow');
+    };
+    setTimeout(loading,3000); // setTimeoutを使って表示時間を設定する
+  });
+
 $(function () {
     $("#fv").css({
         "background-color": "transparent",

@@ -29,6 +29,9 @@ body {
     width: 65px;
     position: relative;
     transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .breeding-rhombus-spinner, .breeding-rhombus-spinner * {
     box-sizing: border-box;

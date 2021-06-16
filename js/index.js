@@ -9,9 +9,9 @@ var myDate = String(myD.getDate());//日
 if (splash_text != myYear + myMonth + myDate) {//cookieデータとアクセスした日付を比較↓
         $(".load").css("display", "block");//１回目はローディングを表示
         setTimeout(function () {
-            $("breeding-rhombus-spinner").fadeIn(1000, function () {//1000ミリ秒（1秒）かけてロゴがフェードイン
+            $(".breeding-rhombus-spinner").fadeIn(1000, function () {//1000ミリ秒（1秒）かけてロゴがフェードイン
                 setTimeout(function () {
-            $("breeding-rhombus-spinner").fadeOut(1000);//1000ミリ秒（1秒）かけてロゴがフェードアウト
+            $(".breeding-rhombus-spinner").fadeOut(1000);//1000ミリ秒（1秒）かけてロゴがフェードアウト
                 }, 1000);//1000ミリ秒（1秒）後に処理を実行
         setTimeout(function () {
             $(".load").fadeOut(1000, function () {//1000ミリ秒（1秒）かけて画面がフェードアウト

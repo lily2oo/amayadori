@@ -512,8 +512,8 @@ body {
     }
     .footer{
         position: absolute;
-        bottom: 3%;
-        right: 10%;   
+        bottom: 5%;
+        right: 12%;   
         font: 2.2vw "Josefin Sans";
         letter-spacing: 0.4em;
         text-align: right;

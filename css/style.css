@@ -12,7 +12,7 @@ body {
     height: 100%;
 }
 
-#wrap{
+#wrap {
     width: 100%;
     height: 100%;
     display: none;
@@ -24,148 +24,39 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-.breeding-rhombus-spinner {
-    height: 65px;
-    width: 65px;
-    position: relative;
-    transform: rotate(45deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .breeding-rhombus-spinner, .breeding-rhombus-spinner * {
-    box-sizing: border-box;
-  }
+}
 
-  .breeding-rhombus-spinner .rhombus {
-    height: calc(65px / 7.5);
-    width: calc(65px / 7.5);
-    animation-duration: 2000ms;
-    top: calc(65px / 2.3077);
-    left: calc(65px / 2.3077);
-    background-color: #fcfcfc;
-    position: absolute;
-    animation-iteration-count: infinite;
-  }
+.mizutama {
+    animation: huwahuwa 3s infinite ease-in-out 0s alternate;
+    display: inline-block;
+    transition: 1.5s ease-in-out;
+    width: 300px;
+    margin-top: 15px;
+}
 
-  .breeding-rhombus-spinner .rhombus:nth-child(2n+0) {
-     margin-right: 0;
-   }
-
-  .breeding-rhombus-spinner .rhombus.child-1 {
-    animation-name: breeding-rhombus-spinner-animation-child-1;
-    animation-delay: calc(100ms * 1);
-  }
-
-  .breeding-rhombus-spinner .rhombus.child-2 {
-    animation-name: breeding-rhombus-spinner-animation-child-2;
-    animation-delay: calc(100ms * 2);
-  }
-
-  .breeding-rhombus-spinner .rhombus.child-3 {
-    animation-name: breeding-rhombus-spinner-animation-child-3;
-    animation-delay: calc(100ms * 3);
-  }
-
-  .breeding-rhombus-spinner .rhombus.child-4 {
-    animation-name: breeding-rhombus-spinner-animation-child-4;
-    animation-delay: calc(100ms * 4);
-  }
-
-  .breeding-rhombus-spinner .rhombus.child-5 {
-    animation-name: breeding-rhombus-spinner-animation-child-5;
-    animation-delay: calc(100ms * 5);
-  }
-
-  .breeding-rhombus-spinner .rhombus.child-6 {
-    animation-name: breeding-rhombus-spinner-animation-child-6;
-    animation-delay: calc(100ms * 6);
-  }
-
-  .breeding-rhombus-spinner .rhombus.child-7 {
-    animation-name: breeding-rhombus-spinner-animation-child-7;
-    animation-delay: calc(100ms * 7);
-  }
-
-  .breeding-rhombus-spinner .rhombus.child-8 {
-    animation-name: breeding-rhombus-spinner-animation-child-8;
-    animation-delay: calc(100ms * 8);
-  }
-
-  .breeding-rhombus-spinner .rhombus.big {
-    height: calc(65px / 3);
-    width: calc(65px / 3);
-    animation-duration: 2000ms;
-    top: calc(65px / 3);
-    left: calc(65px / 3);
-    background-color: #fcfcfc;
-    animation: breeding-rhombus-spinner-animation-child-big 2s infinite;
-    animation-delay: 0.5s;
-  }
-
-
-  @keyframes breeding-rhombus-spinner-animation-child-1 {
-    50% {
-      transform: translate(-325%, -325%);
+@keyframes huwahuwa{
+    0% {
+        transform: translate(0,0px);
+        opacity: 0;
     }
-  }
 
-  @keyframes breeding-rhombus-spinner-animation-child-2 {
-    50% {
-      transform: translate(0, -325%);
+    100%{
+        transform: translate(0,-15px);
+        opacity: 1;
     }
-  }
+}
 
-  @keyframes breeding-rhombus-spinner-animation-child-3 {
-    50% {
-      transform: translate(325%, -325%);
-    }
-  }
 
-  @keyframes breeding-rhombus-spinner-animation-child-4 {
-    50% {
-      transform: translate(325%, 0);
-    }
-  }
 
-  @keyframes breeding-rhombus-spinner-animation-child-5 {
-    50% {
-      transform: translate(325%, 325%);
-    }
-  }
-
-  @keyframes breeding-rhombus-spinner-animation-child-6 {
-    50% {
-      transform: translate(0, 325%);
-    }
-  }
-
-  @keyframes breeding-rhombus-spinner-animation-child-7 {
-    50% {
-      transform: translate(-325%, 325%);
-    }
-  }
-
-  @keyframes breeding-rhombus-spinner-animation-child-8 {
-    50% {
-      transform: translate(-325%, 0);
-    }
-  }
-
-  @keyframes breeding-rhombus-spinner-animation-child-big {
-    50% {
-      transform: scale(0.5);
-    }
-  }
-.section{
+.section {
     position: relative;
 }
-#header{
+
+#header {
     width: 100%;
-    height: 100%;   
+    height: 100%;
 }
+
 #fv {
     width: 100%;
     height: 100%;
@@ -191,7 +82,8 @@ body {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
 }
-#soto{
+
+#soto {
     opacity: 0.5;
 }
 
@@ -199,10 +91,12 @@ body {
     opacity: 0;
     background-color: rgba(255, 255, 255, 1);
 }
+
 #step01 {
     opacity: 0;
     background-color: rgba(255, 255, 255, 1);
 }
+
 #step02 {
     opacity: 0;
     background-color: rgba(255, 255, 255, 1);
@@ -226,13 +120,15 @@ body {
 
 /* ぴーしー */
 @media screen and (min-width:480px) {
-    .sp{
+    .sp {
         display: none;
     }
-    #logo{
+
+    #logo {
         width: 95%;
     }
-    #arrow{
+
+    #arrow {
         position: absolute;
         top: 95%;
         left: 50%;
@@ -240,157 +136,181 @@ body {
         text-align: center;
         opacity: 0.8;
     }
-    #arrow p{
-        font:1.3vw "Josefin Sans";
+
+    #arrow p {
+        font: 1.3vw "Josefin Sans";
         color: #FFF;
         letter-spacing: 0.4em;
         margin: 10px;
     }
+
     #arrow img {
         width: 2vw;
     }
-    .format{
+
+    .format {
         opacity: 1;
     }
-    .format-tl{
+
+    .format-tl {
         position: absolute;
         top: 8%;
         left: 9%;
         font: 3vw "Josefin Sans";
         color: #3f3f3f;
     }
-    .format-bl{
+
+    .format-bl {
         position: absolute;
         top: 14%;
         left: 6%;
         font-weight: 300;
-        font-size:  1.4vw;
+        font-size: 1.4vw;
         letter-spacing: 0.6em;
         color: #c4c4c4;
         writing-mode: vertical-rl;
     }
-    .format-tr{
+
+    .format-tr {
         position: absolute;
         top: 86%;
-        left: 74%;       
+        left: 74%;
         font: 1.125vw "Josefin Sans";
         letter-spacing: 0.6em;
         color: #4f4f4f;
     }
-    .format-br{
+
+    .format-br {
         position: absolute;
         top: 88.6%;
-        left: 66%;      
+        left: 66%;
         font: 0.843vw "Josefin Sans";
         letter-spacing: 0.6em;
         color: #c4c4c4;
     }
-    #step00 {
-    }
-    #main00{
+
+    #step00 {}
+
+    #main00 {
         text-align: center;
         font-weight: 300;
-        font-size:  2vw;
+        font-size: 2vw;
         line-height: 1.8;
         color: #3f3f3f;
         opacity: 0.9;
     }
+
     #step01 {
         background: url(/img/bg1.jpg) center / cover no-repeat;
     }
-    #main01{
+
+    #main01 {
         position: absolute;
         top: 55%;
         left: 45%;
         font-weight: 300;
-        font-size:  1.8vw;
+        font-size: 1.8vw;
         line-height: 1.8;
         color: #ffffff;
         opacity: 0.9;
     }
+
     #step02 {
         background: url(/img/bg2.jpg) center / cover no-repeat;
     }
-    #main02{
+
+    #main02 {
         position: absolute;
         top: 45%;
         left: 7%;
         font-weight: 300;
-        font-size:  1.8vw;
+        font-size: 1.8vw;
         line-height: 1.8;
         color: #ffffff;
         opacity: 0.9;
     }
+
     #step03 {
         background: url(/img/bg3.jpg) center / cover no-repeat;
     }
-    #main03{
+
+    #main03 {
         position: absolute;
         top: 44%;
         left: 53%;
         font-weight: 300;
-        font-size:  1.5vw;
+        font-size: 1.5vw;
         line-height: 1.8;
         color: #5f5f5f;
         opacity: 0.8;
     }
-    #step99 {
-    }
 
-    #main99{
+    #step99 {}
+
+    #main99 {
         text-align: center;
         font-weight: 300;
-        font-size:  1.8vw;
+        font-size: 1.8vw;
         line-height: 1.8;
         color: #3f3f3f;
         opacity: 0.9;
     }
-    #step{
+
+    #step {
         background: url(/img/bg4.jpg) center / cover no-repeat;
     }
-    #main{
+
+    #main {
         position: absolute;
         top: 57%;
         left: 6%;
         font-weight: 300;
-        font-size:  1.8vw;
+        font-size: 1.8vw;
         line-height: 1.8;
         color: #ffffff;
         opacity: 0.8;
     }
+
     #step01 .format-tl,
     #step02 .format-tl,
-    #step .format-tl{
+    #step .format-tl {
         color: #f0f0f0;
     }
-    .tlt span{
-        margin:1px 2px
+
+    .tlt span {
+        margin: 1px 2px
     }
-    .footer{
+
+    .footer {
         position: absolute;
         bottom: 2%;
         left: 50%;
-        transform: translate(-50%);      
+        transform: translate(-50%);
         font: 0.6vw "Josefin Sans";
         letter-spacing: 0.4em;
         color: #c4c4c4;
     }
 }
+
 /* すまほ */
 @media screen and (max-width:480px) {
-    .pc{
+    .pc {
         display: none;
     }
-    #pp-nav{
+
+    #pp-nav {
         display: none;
     }
-    #logo{
+
+    #logo {
         width: 140%;
     }
-    .format{
+
+    .format {
         opacity: 0.9;
     }
-    #arrow{
+
+    #arrow {
         position: absolute;
         top: 95%;
         left: 50%;
@@ -398,51 +318,58 @@ body {
         text-align: center;
         opacity: 0.8;
     }
-    #arrow p{
+
+    #arrow p {
         font: 3vw "Josefin Sans";
         color: #FFF;
         letter-spacing: 0.4em;
         margin: 5px;
     }
+
     #arrow img {
         width: 6vw;
     }
-    .format-tl{
+
+    .format-tl {
         position: absolute;
         top: 4.8%;
         left: 12%;
         font: 5vw "Josefin Sans";
         color: #3f3f3f;
     }
-    .format-bl{
+
+    .format-bl {
         position: absolute;
         top: 8.5%;
         left: 5%;
         font-weight: 300;
-        font-size:  3vw;
+        font-size: 3vw;
         letter-spacing: 0.6em;
         color: #c4c4c4;
         writing-mode: vertical-rl;
     }
-    .format-tr{
+
+    .format-tr {
         position: absolute;
         bottom: 6.8%;
-        right: 5%;       
+        right: 5%;
         font: 2.7vw "Josefin Sans";
         letter-spacing: 0.6em;
         color: #4f4f4f;
     }
-    .format-br{
+
+    .format-br {
         position: absolute;
         bottom: 5%;
-        left: 30%;      
+        left: 30%;
         font: 2.4vw "Josefin Sans";
         letter-spacing: 0.6em;
         color: #c4c4c4;
     }
-    #step00 {
-    }
-    #main00{
+
+    #step00 {}
+
+    #main00 {
         position: absolute;
         top: 50%;
         left: 55%;
@@ -450,52 +377,58 @@ body {
         width: 90%;
         text-align: left;
         font-weight: 300;
-        font-size:  4.4vw;
+        font-size: 4.4vw;
         line-height: 1.8;
         color: #3f3f3f;
         opacity: 0.9;
     }
+
     #step01 {
         background: url(/img/bg1s.jpg) center / auto 100% no-repeat;
     }
-    #main01{
+
+    #main01 {
         position: absolute;
         top: 64%;
         left: 15%;
         font-weight: 300;
-        font-size:  3.7vw;
+        font-size: 3.7vw;
         line-height: 2;
         color: #ffffff;
     }
+
     #step02 {
         background: url(/img/bg2s.jpg) center / auto 100% no-repeat;
     }
-    #main02{
+
+    #main02 {
         width: 80vw;
         position: absolute;
         top: 63%;
         left: 15%;
         font-weight: 300;
-        font-size:  3.5vw;
+        font-size: 3.5vw;
         line-height: 1.8;
         color: #ffffff;
     }
+
     #step03 {
         background: url(/img/bg3s.jpg) center / auto 100% no-repeat;
     }
-    #main03{
+
+    #main03 {
         position: absolute;
         top: 25%;
         left: 20%;
         font-weight: 300;
-        font-size:  3.6vw;
+        font-size: 3.6vw;
         line-height: 2;
         color: #5f5f5f;
     }
-    #step99 {
-    }
 
-    #main99{
+    #step99 {}
+
+    #main99 {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -503,38 +436,43 @@ body {
         width: 80vw;
         text-align: left;
         font-weight: 300;
-        font-size:  3.5vw;
+        font-size: 3.5vw;
         line-height: 1.4;
         color: #3f3f3f;
         opacity: 0.9;
     }
-    #step{
+
+    #step {
         background: url(/img/bg4s.jpg) center / auto 100% no-repeat;
     }
-    #main{
+
+    #main {
         width: 80vw;
         position: absolute;
         top: 65%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         font-weight: 300;
-        font-size:  3.3vw;
+        font-size: 3.3vw;
         line-height: 1.8;
         color: #ffffff;
         opacity: 0.8;
     }
+
     #step01 .format-tl,
     #step02 .format-tl,
-    #step .format-tl{
+    #step .format-tl {
         color: #3f3f3f;
     }
-    .tlt span{
-        margin:0.75px 1.25px
+
+    .tlt span {
+        margin: 0.75px 1.25px
     }
-    .footer{
+
+    .footer {
         position: absolute;
         bottom: 5%;
-        right: 5%;   
+        right: 5%;
         font: 2.2vw "Josefin Sans";
         letter-spacing: 0.4em;
         text-align: right;

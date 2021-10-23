@@ -1,11 +1,36 @@
-$(window).on('load',function(){
-    var loading = function(){
-      $('.load').fadeOut('fast');
-      $('#wrap').fadeIn('slow');
-    };
-    setTimeout(loading,6000); // setTimeoutを使って表示時間を設定する
-  });
+$(document).ready(function () {
+    $('#pagepiling').pagepiling({
+        loopBottom: true,
+    });
+});
 
+var splash_text = $.cookie('accessdate'); //キーが入っていれば年月日を取得
+var myD = new Date();//日付データを取得
+var myYear = String(myD.getFullYear());//年
+var myMonth = String(myD.getMonth() + 1);//月
+var myDate = String(myD.getDate());//日
+    
+if (splash_text != myYear + myMonth + myDate) {//cookieデータとアクセスした日付を比較↓
+        $("#load").css("display", "block");//１回目はローディングを表示
+        setTimeout(function () {
+            $("#load img").fadeIn(1000, function () {//1000ミリ秒（1秒）かけてロゴがフェードイン
+                setTimeout(function () {
+            $("#load img").fadeOut(1000);//1000ミリ秒（1秒）かけてロゴがフェードアウト
+                }, 1000);//1000ミリ秒（1秒）後に処理を実行
+        setTimeout(function () {
+            $("#load").fadeOut(1000, function () {//1000ミリ秒（1秒）かけて画面がフェードアウト
+            var myD = new Date();
+            var myYear = String(myD.getFullYear());
+            var myMonth = String(myD.getMonth() + 1);
+            var myDate = String(myD.getDate());
+            $.cookie('accessdate', myYear + myMonth + myDate); //accessdateキーで年月日を記録
+        });
+        }, 1700);//1700ミリ秒（1.7秒）後に処理を実行
+    });
+}, 1000);//1000ミリ秒（1秒）後に処理を実行
+}else {
+    $("#load").css("display", "none");//同日2回目のアクセスでローディング画面非表示
+};
 $(function () {
     $("#fv").css({
         "background-color": "transparent",

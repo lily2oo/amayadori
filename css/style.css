@@ -46,7 +46,36 @@ body {
     }
 }
 
+.st0 {
+    fill: none;
+}
 
+.st1 {
+    fill: #FFFFFF;
+}
+
+.st2 {
+    fill: #FDFF00;
+}
+
+.st3 {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-miterlimit: 10;
+}
+
+.st4 {
+    fill: none;
+    stroke: #3BFFFF;
+    stroke-miterlimit: 10;
+}
+
+.st5 {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
 
 .section {
     position: relative;
